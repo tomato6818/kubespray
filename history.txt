@@ -1,0 +1,137 @@
+  1  ll
+    2  mkdir dev
+    3  cd dev/
+    4  ll
+    5  git clone https://github.com/kubernetes-sigs/kubespray.git
+    6  sudo apt install -y git
+    7  git clone https://github.com/kubernetes-sigs/kubespray.git
+    8  ll
+    9  cd kubespray/
+   10  ll
+   11  git checkout release-2.27
+   12  git pull
+   13  ll
+   14  python3 --version
+   15  python3 -m venv venv
+   16  apt install python3.11-venv
+   17  sudo apt install python3.11-venv
+   18  sudo apt install python3.11 python3.11-venv
+   19  sudo apt install python3.11
+   20  sudo apt update
+   21  sudo apt install python3.11 python3.11-venv python3.11-dev
+   22  sudo add-apt-repository ppa:deadsnakes/ppa
+   23  sudo apt update
+   24  apt policy python3.11
+   25  sudo apt install python3.11
+   26  sudo apt install python3.11 python3.11-venv python3.11-dev
+   27  python3.11 -m venv ~/venvs/kubespray-env
+   28  source ~/venvs/kubespray-env/bin/activate
+   29  python --version
+   30  pip install --upgrade pip
+   31  pip install -r requirements.txt
+   32  cp -rfp inventory/sample inventory/mycluster
+   33  vi inventory/mycluster/inventory.ini 
+   34  vi install.sh
+   35  vi inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml 
+   36  grep -R kube-proxy 
+   37  grep -R kube_proxy
+   38  vi inventory/mycluster/group_vars/k8s_cluster/k8s-net-cilium.yml 
+   39  vi inventory/mycluster/group_vars/k8s_cluster/addons.yml 
+   40  grep -R kube-proxy 
+   41  vi cilium_kube_proxy_replacement
+   42  vi roles/kubespray-defaults/defaults/main/main.yml
+   43  grep -R kube_proxy_enabled *
+   44  vi install.sh 
+   45  sh install.sh 
+   46  vi install.sh 
+   47  sh install.sh 
+   48  vi install.sh 
+   49  sh install.sh 
+   50  ifconfig
+   51  vi inventory/mycluster/inventory.ini 
+   52  vi install.sh 
+   53  sh install.sh 
+   54  sudo apt install sshpass
+   55  sh install.sh 
+   56  kubectl
+   57  kubectl get nodesw
+   58  kubectl get nodes
+   59  cd inventory/mycluster/artifacts
+   60  ./kubectl.sh get nodes
+   61  cd inventory/mycluster/credentials/
+   62  ll
+   63  cd ..
+   64  ll
+   65  cd ..
+   66  ll
+   67  export KUBECONFIG=$PWD/kubespray-do.conf
+   68  kubectl get nodes
+   69  ps -ef | grep etcd
+   70  kubectl proxy
+   71  kubectl get nodes
+   72  cat /etc/hosts
+   73  ansible all -m ping -i inventory/mycluster/inventory.ini
+   74  ansible node1 -m ping -i inventory/mycluster/inventory.ini
+   75  ll
+   76  cd 
+   77  ll
+   78  cd .kube
+   79  ll
+   80  mkdir .kube
+   81  ll /etc/kubernetes/admin.conf
+   82  cp /etc/kubernetes/admin.conf .kube/config
+   83  sudo cp /etc/kubernetes/admin.conf .kube/config
+   84  kubectl get nodes
+   85  cd .kube/
+   86  ll
+   87  sudo chmod 600 config 
+   88  sudo chown tomato6818:tomato6818 config 
+   89  ll
+   90  kubectl get nodes
+   91  export KUBECONFIG=.kube/config
+   92  kubectl get nodes
+   93  ll
+   94  cat config 
+   95  ps -ef | grep api
+   96  curl localhost:6443
+   97  kubectl get nodes
+   98  kubectl --help
+   99  kubectlconfig
+  100  kubectl config
+  101  ll
+  102  pwd
+  103  cat config 
+  104  ll
+  105  history
+  106  export KUBECONFIG=~/.kube/config
+  107  kubectl get nodes
+  108  unset KUBECONFIG
+  109  echo ${KUBECONFIG}
+  110  kubectl get nodes
+  111  echo "alias k=kubectl" >> ~/.bashrc
+  112  k
+  113  source ~/.bashrc 
+  114  k get nodes
+  115  cd 
+  116  ll
+  117  cd dev/
+  118  ll
+  119  mkdir git
+  120  cd git/
+  121  ll
+  122  git clone https://github.com/tomato6818/kubespray.git
+  123  cp -r ~/dev/kubespray/* .
+  124  ll
+  125  cd ..
+  126  ll
+  127  rm -rf git/
+  128  mkdir git
+  129  cd git/
+  130  ll
+  131  git clone https://github.com/tomato6818/kubespray.git
+  132  cd kubespray/
+  133  cp -r ~/dev/kubespray/* .
+  134  ll
+  135  vi install.sh 
+  136  history
+
